@@ -1,7 +1,6 @@
 <?php $title = 'contact'; ?>
 <?php ob_start(); ?>
-
-
+<?php require'menu.php';?>
 
 
 <?php $content = ob_get_clean(); ?>

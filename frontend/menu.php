@@ -1,15 +1,10 @@
-<?php $title = 'services'; ?>
-<?php $index_link = 'frontend/css/style.css'; ?> 
-
-<?php ob_start(); ?>
-
  <!-- navigation -->
 
  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.php">
-            <img src="frontend/img/logo.jpg" width="30" height="30" alt="logo"> ORTFOLIO
-        </a> 
+        <a class="navbar-brand" href="../index.php">
+            <img src="img/logo.jpg" width="30" height="30" alt="logo"> ORTFOLIO
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -17,16 +12,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.php">SERVICES <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="../index.php">SERVICES <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">PORTFOLIO</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="frontend/about.php">A PROPOS</a>
+                <a class="nav-link" href="about.php">A PROPOS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="frontend/contact.php">CONTACT</a>
+                <a class="nav-link" href="contact.php">CONTACT</a>
             </li>
             <li class="nav-item" >
             <a class="nav-link " href="#"><span type="button" class="fas fa-search fa-lg" data-toggle="modal" data-target="#exampleModal"></span></a> 
@@ -37,6 +32,7 @@
 </nav>
 
 <!-- Modal search -->
+
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -55,20 +51,3 @@
     </div>
   </div>
 </div>
-
-
-
-<header 
-    class="masthead">
-        <div class="container">
-            <div class="masthead-subheading">Bienvenue sur Portfolio</div>
-            <div class="masthead-heading text-uppercase">RIDI OTOKO TEMPLATE</div>
-            <a class="btn btn-danger btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
-        </div>
-</header>
-
-
-
-
-<?php $content = ob_get_clean(); ?>
-<?php require 'frontend/template.php'; ?>
