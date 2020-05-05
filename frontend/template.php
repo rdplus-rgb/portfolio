@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="<?= $index_link ; ?> ">
+    <link rel="stylesheet" href="<?= $index_link_css; ?> ">
+     <!-- My js -->
+    <script src="<?= $index_link_js; ?>"></script>
+    <script src="js/script.js"></script>
     <!-- bootstrap js and jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -20,16 +23,20 @@
 </head>
 <body>
 
-<?= $content; ?>
+  <?= $content; ?>
 
-<blockquote>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt hic consequuntur molestiae voluptatibus nihil omnis, voluptates totam eum molestias harum dolore quidem a nobis quis soluta, beatae quia. Quisquam?
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sequi minima voluptas sed sapiente dolor aut ipsum sunt. Et blanditiis iusto aperiam officia natus delectus id, quasi molestias porro alias!
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda eveniet mollitia id dignissimos accusantium et tenetur atque repudiandae dolorem, ut fugiat corrupti est magni quaerat nulla cumque commodi! Eveniet, minima!locale_get_region
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quas sunt magnam aspernatur, quae sint. Voluptatibus aliquam ab veniam accusamus saepe, porro excepturi fugit cum recusandae ipsam quo, possimus officia!
-</blockquote>
-   
-    
+  <!-- Footer-->
+  <footer class="footer py-4 bg-dark contenair-fluid">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-lg-left text-light">Copyright © portfolio 2020</div>
+          <div class="col-lg-4 my-3 my-lg-0">
+            <a class="btn btn-light btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-light btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-light btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        <div class="col-lg-4 text-lg-right"><a class="mr-3 text-light" href="#!">Privacy Policy</a><a class="text-light" href="#!">Terms of Use</a></div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

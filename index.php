@@ -1,5 +1,6 @@
 <?php $title = 'services'; ?>
-<?php $index_link = 'frontend/css/style.css'; ?> 
+<?php $index_link_css = 'frontend/css/style.css'; ?> 
+<?php $index_link_js = 'frontend/js/caroussel.js'; ?>
 
 <?php ob_start(); ?>
 
@@ -17,7 +18,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.php">SERVICES <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.php">ACCEUIL <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">PORTFOLIO</a>
@@ -37,6 +38,7 @@
 </nav>
 
 <!-- Modal search -->
+
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -56,7 +58,7 @@
   </div>
 </div>
 
-
+<!-- header -->
 
 <header 
     class="masthead">
@@ -67,8 +69,67 @@
         </div>
 </header>
 
+<!-- body -->
 
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <h1> Propulsé votre carrière avec portfolio</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ut dolorum ipsum reprehenderit distinctio nemo quod mollitia iste facere, repellendus reiciendis eveniet quisquam similique saepe cum! Aliquam praesentium quo architecto.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic voluptates maxime provident aliquam exercitationem adipisci dolores autem cum, perspiciatis sit, cupiditate eveniet dolor? Ab impedit ex at officiis illum.
+            </p>
+        </div class="col-sm-12 col-md-12 col-lg-12">
+        <div>
+            <h1>NOS SERVICES</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem ipsa doloribus a hic numquam quasi expedita aperiam placeat ducimus. Labore cumque suscipit similique fuga nobis sequi, consequuntur minima id harum!</p>
+        </div>
+    </div>
+</div>
 
+<!-- section services -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-4 col-lg-4">
+      <img src="frontend/img/design2.png" style="width: 16rem;" alt="illustration">
+      <div>
+        <h1></h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur nostrum, quis, quod magnam, omnis nulla delectus adipisci ad pariatur doloribus ullam reprehenderit repellat ducimus asperiores. Eligendi tempore fugiat quibusdam accusantium!</p>
+      </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <img src="frontend/img/c6.png" style="width: 12rem;" alt="logo">
+        <div>
+          <h1></h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur nostrum, quis, quod magnam, omnis nulla delectus adipisci ad pariatur doloribus ullam reprehenderit repellat ducimus asperiores. Eligendi tempore fugiat quibusdam accusantium!</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <img src="frontend/img/logo.png" style="width: 18rem;" alt="maquette">
+        <div>
+          <h1></h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur nostrum, quis, quod magnam, omnis nulla delectus adipisci ad pariatur doloribus ullam reprehenderit repellat ducimus asperiores. Eligendi tempore fugiat quibusdam accusantium!</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<!-- customers list -->
+
+<div class="container">
+  <div class="row">
+      <div class="card col-sm-12 col-md-4 col-lg-4" style="width: 18rem;">
+        <img src="frontend/img/a.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+  </div>
+</div>
 
 <?php $content = ob_get_clean(); ?>
 <?php require 'frontend/template.php'; ?>
